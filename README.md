@@ -1,5 +1,5 @@
 # nt-graph
-A simple Network Table that uses pynetworktables2js
+A simple Network Table graph that uses pynetworktables2js
 
 # Using
 Download the ZIP from releases, extract it and change the team number in the run file.

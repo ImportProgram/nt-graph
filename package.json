@@ -6,8 +6,8 @@
   "scripts": {
     "build": "parcel build index.html --public-url ."
   },
-  "author": "",
-  "license": "ISC",
+  "author": "ImportProgram",
+  "license": "MIT",
   "dependencies": {
     "@importcore/crust": "^1.0.6",
     "babel-core": "^6.17.0",

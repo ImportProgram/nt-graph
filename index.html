@@ -1,0 +1,139 @@
+<html>
+
+<head>
+    <title>nt-graph</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            padding: 0px;
+            margin: 0px;
+            user-select: none;
+        }
+
+        html {
+            overflow: hidden;
+            height: 100%;
+            width: 100%;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .crust--land {
+            background-color: gray;
+            height: 100%;
+            padding: 0px;
+            margin: 0px;
+            overflow: hidden;
+            user-select: none;
+        }
+
+        .crust--ripple {
+            position: absolute;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            animation: ripple-animation 300ms forwards;
+        }
+
+        @keyframes ripple-animation {
+            from {
+                transform: scale3d(0, 0, 0);
+                opacity: 1;
+            }
+
+            to {
+                transform: none;
+                opacity: 0.4;
+            }
+        }
+
+        .crust--grid--col,
+        .crust--grid--row {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-direction: normal;
+            -webkit-box-orient: horizontal;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-flex-wrap: nowrap;
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+            -webkit-box-pack: start;
+            -webkit-justify-content: flex-start;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+            -webkit-align-content: stretch;
+            -ms-flex-line-pack: stretch;
+            align-content: stretch;
+            -webkit-box-align: stretch;
+            -webkit-align-items: stretch;
+            -ms-flex-align: stretch;
+            align-items: stretch;
+        }
+
+        .crust--grid--row {
+            -webkit-box-orient: vertical;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
+
+        .crust--grid--col-center {
+            display: flex;
+            flex-flow: row;
+            justify-content: center;
+        }
+
+        .crust--grid--row-center {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+        }
+
+        .crust--grid--flex {
+            -webkit-box-flex: 1;
+            -webkit-flex: 1;
+            flex: 1;
+            -webkit-align-self: auto;
+            align-self: auto;
+        }
+
+        .crust--grid--fill {
+            -webkit-box-flex: 1;
+            -webkit-flex: 1;
+            flex: 1;
+            -webkit-align-self: auto;
+            align-self: auto;
+            height: 100%;
+        }
+
+        #crust--grid--canvas {
+            overflow: hidden;
+            width: 100%;
+            height: 100% !important;
+        }
+
+        .crust--box {
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .crust--box--vertical {
+            flex-flow: column;
+            align-items: flex-start;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app"></div>
+</body>
+<script src="src/App.jsx"></script>
+</html>

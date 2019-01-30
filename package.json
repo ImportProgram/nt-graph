@@ -1,0 +1,29 @@
+{
+  "name": "nt-graph",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "parcel build index.html --public-url ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@importcore/crust": "^1.0.6",
+    "babel-core": "^6.17.0",
+    "babel-preset-react": "^6.16.0",
+    "canvasjs": "^1.8.1",
+    "chart.js": "^2.7.3",
+    "chartjs-plugin-zoom": "^0.6.6",
+    "meow": "^3.7.0",
+    "react": "^15.3.2",
+    "react-chartjs-2": "^2.7.4",
+    "react-dom": "^15.3.2",
+    "react-player-controls": "^1.1.0",
+    "react-search-input": "^0.11.3"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "parcel-plugin-inliner": "^1.0.2"
+  }
+}
